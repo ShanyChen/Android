@@ -37,24 +37,28 @@ public class MainActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 
 	}
-//	public void onStart() {
-//		super.onStart();
-//		Log.d(tag, "In the OnStart() event");
-//	}
-//	public void onRestart() {
-//		super.onStart();
-//		Log.d(tag, "In the OnRestart() event");
-//	}
-//	public void onPause() {
-//		super.onStart();
-// 		Log.d(tag, "In the OnPauset() event");
-//	}
-//	public void onStop() {
-//		super.onStart();
-//		Log.d(tag, "In the OnStop() event");
-//	}
-//	public void onDestory() {
-//		super.onStart();
-//		Log.d(tag, "In the onDestory() event");
-//	}
+	public void onStart() {
+		super.onStart();
+		Log.d(tag, "In the OnStart() event");
+	}
+	public void onRestart() {
+		super.onRestart();
+		Log.d(tag, "In the OnRestart() event");
+	}
+	public void onResume() {
+		super.onResume();
+ 		Log.d(tag, "In the onResume() event");
+	}
+	public void onPause() {
+		super.onPause();
+ 		Log.d(tag, "In the onPause() event");
+	}
+	public void onStop() {
+		super.onStop();
+		Log.d(tag, "In the OnStop() event");
+	}
+	public void onDestroy() {
+		super.onDestroy() ;
+		Log.d(tag, "In the onDestory() event");
+	}
 }
